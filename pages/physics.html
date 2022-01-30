@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Lisanne's Portfolio Website</title>
+    <link rel="stylesheet" href="/page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+    
+<body>
+
+<div id="box"  class="container mt-5 bg-light" style="max-width:800px">
+
+<!-----------------Content-------------------->
+<section id="content" class="container py-5" style="max-width: 900px">
+    
+    <div class="row">
+        <h2>Physics in Unity</h2>
+        <p>To extend my knowledge on physics in Unity's 3D physics engine, I researched three physics elements that can be used in Unity 3D: Rigidbodies, Constraints and Materials. On this page you will see a short explanation and video demonstration for each element. The demonstrations are made in Unity 3D by me, using Unity version 2020.3.8f1.</p>
+        <button id="demos" style="width:auto; font-size:13px" type=button class="container my-3">
+            <a href="https://lisannew.itch.io/physics-in-unity" target="_blank">
+                Click here to view the demos on itch.io (better quality)
+            </a>
+        </button>
+    </div>
+    
+    <div class="row">
+        <h4>Rigidbodies</h4>
+        <p>The Rigidbody is the first step to using physics in Unity. As said in the Unity Documentation: “Adding a Rigidbody component to an object will put its motion under the control of Unity’s physics engine.” Rigidbodies have a mass and are affected by gravity. Using code, it is possible to add a force or torque to a Rigidbody. If an object also has a Collider component, it is also possible to collide with objects in its way.</p>
+        <p>To demonstrate the use of Rigidbodies, I made a house of cards in Unity. In the first video a projectile collides with the cards, which shows the how the collisions and gravity work.</p>
+        <p>In the second video the AddForce function is used to apply a force to each card, so it looks like it is blown away by wind.</p>
+    </div>
+    <div class="row pb-5">
+        <div class="col">
+            <h6>Video 1: Collision with projectile</h6>
+            <video width="300px" controls>
+                <source src="/videos/rigidbodies_ball.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="col">
+            <h6>Video 2: Use of the Addforce function</h6>
+            <video width="300px" controls>
+                <source src="/videos/rigidbodies_wind.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="row pb-5">
+        <h4>Constraints</h4>
+        <p>This is what the Unity Documentation says about constraints: "A Constraint component links the position, rotation, or scale of a GameObject to another GameObject. A constrained GameObject moves, rotates, or scales like the GameObject it is linked to." An example of a constraint would be a joint.</p>
+        <p>The bridge in the following demo is made using hinge joints. A hinge joint connects two rigid bodies together, in a way that makes them move as if there was a hinge between them. For every plank in the bridge, there is a hinge joint connecting it to the cylinders inbetween the planks. This way the planks are able to move a bit in relation to each other, and dangle downwards because of gravity.</p>
+        <p>The hinge joints have a Break Force, which is the biggest force that can be exerted on the joint before it breaks. This is demonstrated by the falling balls on the bridge. The bridge is fine when the first two balls fall, with a mass of 5 and 10, but it breaks when the last ball with a mass of 50 falls. This force is greater than the joints' Break Force.</p>
+        
+        <div class="col d-flex">
+            <div class="m-auto">
+                <h6>Video 3: A bridge made with hinge joints</h6>
+            <video width="400px" controls>
+                <source src="/videos/constraints.mp4" type="video/mp4">
+            </video>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4>Physic Materials</h4>
+        <p>Physic materials are used to adjust the friction and bouncing effects of two colliding objects (Unity Documentation). The physic material is applied to the collider component of an object.</p>
+        <div class="col">
+            <p>The properties of a physic material are Dynamic Friction, Static Friction and Bounciness, which usually have values from 0 to 1 (see image 1). The mode of Friction Combine and Bounce Combine will determine how the friction/bounciness of the two colliding objects will be combined, or which one of the values will be used.</p>
+        </div>
+        <div class="col">
+            <h6>Image 1: Properties of a physic material</h6>
+            <img src="/images/physic%20material.jpg">
+        </div>
+    </div>
+    <div class="row pb-5">
+        <h4>Friction</h4>
+        <p>Static Friction determines how much force is needed for an object to start moving. An object with a Static Friction value of zero will start moving immediately when a force is applied, while an object with a value of one will only start moving when the applied force is high enough. To demonstrate this, I recreated this situation in Unity (see video 4). The two cubes have exactly the same physical properties, except for the static friction. A force of the same size is applied to both of them to make them move. You can see that the blue block moves a greater distance because it started moving immediately, while it took the red cube some time to start moving because of the static friction.</p>
+        <p>Dynamic Friction determines the friction when an object is already moving. When the Dynamic Friction value is zero, a moving object will continue moving with the same velocity, because there is no force in the opposite direction of the applied force. A Dynamic Friction value bigger than zero will create this opposite force, and the object will slow down until it stops moving. To demonstrate this, I created three blocks in Unity and applied the same amount of force to them, so they start moving at the same velocity (see video 5). Each block will then enter a colored path, which has a certain Dynamic Friction value. The red path has a value of 1.0, the green path has 0.6, and the blue path has no Dynamic Friction, so 0.0.</p>
+        <div class="col">
+            <h6>Video 4: Static Friction</h6>
+            <video width="300px" controls>
+                <source src="/videos/StaticFriction_cut_cropped.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="col">
+            <h6>Video 5: Dynamic Friction</h6>
+            <video width="300px" controls>
+                <source src="/videos/DynamicFriction_cut_cropped.mp4">
+            </video>
+        </div>
+    </div>
+    <div class="row">
+        <h4>Bounciness</h4>
+        <p>The Bounciness value of an object determines how bouncy it is. An object with a Bounciness value of zero does not bounce at all, while an object with a value of one bounces without losing any energy. This means that an object will bounce back up to the height where it started from. The following video (video 6) shows a sphere with a Bounciness value of one. As expected, it does not lose any energy, and just keeps on bouncing without losing height.</p>
+        
+        <div class="col d-flex">
+            <div class="m-auto">
+                <h6>Video 6: A sphere with a Bounciness of 1</h6>
+            <video width="400px" controls>
+                <source src="/videos/Bounciness_cut_cropped.mp4" type="video/mp4">
+            </video>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</section>
+    
+</div> 
+    
+<!-----------------Back-Button--------------------> 
+<div class="container text-start px-0" style="max-width: 800px">
+    <button style="width:100px" type=button onclick="location.href='/index.html'" class="container  my-5">Back</button>
+</div>
+
+    </body>
+</html>

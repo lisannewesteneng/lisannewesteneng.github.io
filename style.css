@@ -1,0 +1,327 @@
+@include media-breakpoint-only(xs) { ... }
+@include media-breakpoint-only(sm) { ... }
+@include media-breakpoint-only(md) { ... }
+@include media-breakpoint-only(lg) { ... }
+@include media-breakpoint-only(xl) { ... }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 900px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 { font-weight: 700 !important; }  
+h2 { font-weight: 900 !important; }
+h3 { font-weight: 600 !important; }
+h4 { font-weight: 400 !important; }
+h5 { font-weight: 600 !important; font-size: 15px;}
+h6 { font-weight: 300 !important; }
+
+body
+{
+    position: relative !important;
+}
+
+/*--------------------Navigation---------------------------*/
+#nav-bar
+{
+    
+}
+.nav li a
+{
+    color: black;
+}
+
+.navbar
+{
+    /*background-image: linear-gradient(to right, #E1AB18	, #E1AB55);*/
+    background-color: #ffffff87 !important;
+    /*#73947b*/
+    padding: 0 !important;
+    margin-top: 5 !important;
+    
+    max-width: 370px;
+    border-radius: 15px 15px;
+    
+    position: fixed !important;
+}
+
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+
+.navbar-nav li a
+{
+    /*Nav elements color=white*/
+    color: #fff !important;
+    /*font-weight: 600;*/
+}
+
+/*--------------------Home----------------------------*/
+#home
+{
+    height: 200px;
+    background-image: url(images/stairs_dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+#intro h1
+{
+    font-size: 25px;
+}
+
+#intro p
+{
+    font-size: 15px;
+}
+
+
+/*--------------------Cards----------------------------*/
+#mywork
+{  
+    background-color: #e8e2d5;
+    /*background-image: linear-gradient(to bottom, #fff, #e8e2d5)*/
+}
+
+#mywork h3
+{
+    color: #E1AB18;
+}
+
+#mywork h1
+{
+    color: #000;
+}
+
+
+
+button
+{
+    border: none;
+}
+
+.card
+{
+    box-shadow: -2px 3px 1px;
+}
+
+.card:hover
+{
+    box-shadow: -5px 6px 3px;
+}
+
+.card-body
+{
+    height: 100px;
+}
+
+.card-title
+{
+    margin: 0;
+}
+
+.card-text
+{
+    font-size: 14px;
+    text-align: start;
+}
+
+
+/*--------------------About-me----------------------------*/
+
+#aboutme
+{
+    height: 700px;
+    /*background-color: #A6705B !important;*/
+    background-color: #394a3d;
+}
+
+/*#aboutme .container*/
+#box
+{
+    height: auto !important;
+    box-shadow: 0px 3px 10px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+#content h1
+{
+    color: #fff !important;	
+}
+
+#content h3
+{
+    color: #9aa286;
+}
+
+#box:hover #pf-hover
+{
+    opacity: 0
+}
+
+#pf
+{
+    padding: 0 !important;
+    border-radius: 5px !important;
+}
+
+#pf-hover
+{
+    position: absolute;
+    padding:0;
+    margin:0;
+    border-radius: 5px !important;
+}
+
+/*-----------------General-information---------------------*/
+#contact
+{
+    background-color: #A6705B !important;
+    height: 600px;
+}
+
+#contact h1
+{
+    color: #fff;
+}
+
+#contact h4
+{
+    /*color: #cca698;*/
+    font-weight: 500 !important;
+}
+
+#contact #box
+{
+    background-color: white;
+}
+
+#contact a
+{
+    color: black;
+}
+
+#contact a:hover
+{
+    color: grey;
+}
+/*-----------------------Footer---------------------------*/
+#footer
+{
+    background-color: #222 !important;
+    font-size: 13px;
+}
+
+@media(min-width: 576px)
+{
+    /*--------------Home--------------*/
+    #home
+    {
+        height: 250px;
+    }
+    #intro h1
+    {
+        font-size: 30px;
+    }
+    #intro p
+    {
+        font-size: 20px;
+    }
+    
+    #mywork
+    {
+        padding: 16 0 50 !important;
+    }
+    
+    .card-body
+    {
+        height: 140px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    /*--------------Home--------------*/
+    #home
+    {
+        height: 400px;
+    }
+    #intro h1
+    {
+        font-size: 50px;
+    }
+    #intro p
+    {
+        font-size: 25px;
+    }
+    
+    .card-body
+    {
+        height: 100px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    /*--------------Home--------------*/
+    #home
+    {
+        height: 600px;
+    }
+    #intro h1
+    {
+        font-size: 60px;
+    }
+    #intro p
+    {
+        font-size: 30px;
+    }
+    
+    /*--------------Cards--------------*/
+    #mywork
+    {
+        padding: 100 100 !important;
+    }
+    
+}
+
+@media (min-width: 1200px)
+{
+    /*--------------Cards--------------*/
+    #mywork
+    {
+        padding: 100 200 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
