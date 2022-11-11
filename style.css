@@ -121,7 +121,7 @@ button
 
 .card-body
 {
-    height: 100px;
+    
 }
 
 .card-title
@@ -133,8 +133,38 @@ button
 {
     font-size: 14px;
     text-align: start;
+    margin-bottom: 3px;
 }
 
+.tool
+{
+    float: left;
+    display: inline;
+    background: green;
+    border-radius: 25px;
+    padding: 0 8px;
+    margin: 2 3 0 0;
+    color: white;
+    font-size: 12px;
+}
+
+.Unity3D
+{
+    background-color: #A6705B
+}
+
+.C#
+{
+    background-color: #394a3d
+}
+
+.date
+{
+    clear: both;
+    float: right;
+    font-size: 10px;
+    padding: 4 0 1 0;
+}
 
 /*--------------------About-me----------------------------*/
 
