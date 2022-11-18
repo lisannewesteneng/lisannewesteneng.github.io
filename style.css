@@ -148,15 +148,14 @@ button
     font-size: 12px;
 }
 
-.Unity3D
-{
-    background-color: #A6705B
-}
-
-.C#
-{
-    background-color: #394a3d
-}
+.Unity3D { background-color: #a65d41 }
+.Cs { background-color: #444e9e }
+.Cg { background-color: #2a99c9 }
+.SG { background-color: #b88440 }
+.Gd { background-color: #5c5791 }
+.GDS { background-color: #805fb3 }
+.Bjs { background-color: #49826f }
+.JS { background-color: #4d4f59 }
 
 .date
 {
