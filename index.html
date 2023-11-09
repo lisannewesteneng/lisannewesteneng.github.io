@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Lisanne's Portfolio Website</title> 
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -10,224 +13,153 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
 </head>
-    
+<body>
 
-<!---------------------Navigation---------------------->
-    
-<body data-spy="scroll" data-target=".nav" data-offset="0">
+    <div class="row h-100">
+        <div class="col-3 h-100">
+            <div class="wrapper h-100">
+                <!--Top menu -->
+                <div class="sidebar h-100">
 
-<div class="d-flex">
-<nav id="navbar-example2" class="navbar fixed-top m-auto">
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#home">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#mywork">My work</a>
-    </li>
-      <li class="nav-item">
-      <a class="nav-link" href="#aboutme">About me</a>
-    </li>
-      <li class="nav-item">
-      <a class="nav-link" href="#contact">Contact</a>
-    </li>
-  </ul>
-</nav>
-</div>
-    
-<!-----------------Introduction------------------>
-<section id="home" class="d-flex text-white">
-    <div class="m-auto text-center">
-        <h1>Hi, I'm Lisanne</h1>
-        <h4 style="font-size: 24">I'm a student programmer</h4>
-    </div>
-</section>
-    
-<!-----------------Grid-Cards------------------->
-<section id="mywork" class="d-flex pt-3 pb-5">
-    
-<div class="m-auto">  
-<h3 class="text-center">Have a look at</h3>
-<h1 class="text-center">My work</h1>
+                    <!--profile image & text-->
+                     <div class="profile">
+                        <img src="images/blank_profile.png" alt="profile_picture">
+                        <h3>Lisanne Westeneng</h3>
+                        <p>Programmer</p>
+                    </div>
 
-    
-<div  class="row row-cols-2 row-cols-sm-4 g-2 px-3">
-    <!--Column-1-->
-  <div class="col">
-      <div class="card">
-        <button type=button onclick="location.href='pages/lumc.html'">
-          <img src="images/lumc.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-start">LUMC</h5>
-            <p class="card-text">VR training room for anesthesiologists</p>
-            <div class="tool UE">Unreal</div>
-            <div class="tool Cs">C++</div>       
-            <div class="date">Spring 2023</div>
-          </div>
-        </button>
-    </div> 
-    <div class="card">
-        <button type=button onclick="location.href='pages/tothepast.html'">
-          <img src="images/1_tothepast%20(2).png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-start">To the past</h5>
-            <p class="card-text">A history app using augmented reality</p>
-            <div class="tool Unity3D">Unity3D</div>
-            <div class="tool Cs">C#</div>         
-            <div class="date">December 2021</div>
-          </div>
-        </button>
-    </div>
-  </div>
-    <!--Column-2-->
-  <div class="col">
-      <div class="card">
-        <button type=button onclick="location.href='pages/terrainshader.html'">
-          <img src="images/terrainshader.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-start">Terrain Wave Shader</h5>
-            <p class="card-text">A simple wave shader for Unity terrain</p>
-            <div class="tool Unity3D">Unity3D</div>
-            <div class="tool Cg">Cg</div>           
-            <div class="date">June 2022</div>
-          </div>          
-        </button>
-    </div>
-    <div class="card">
-        <button type=button onclick="location.href='pages/garmentory.html'">
-            <img src="images/3_garmentory.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-start">Garmentory</h5>
-                <p class="card-text">A 3D game about the fashion industry</p>
+                    <!--intro-->
+                    <div class="intro">
+                        Hello.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-9">
+            <div class="projects p-5">
+            <div class="row row-cols-2 row-cols-sm-4 g-3">
+        <!--Column-1-->
+      <div class="col">
+          <div class="card">
+            <button type=button onclick="location.href='pages/lumc.html'">
+              <img src="images/lumc.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-start">LUMC</h5>
+                <p class="card-text">VR training room for anesthesiologists</p>
+                <div class="tool UE">Unreal</div>
+                <div class="tool Cs">C++</div>       
+                <div class="date">Spring 2023</div>
+              </div>
+            </button>
+        </div> 
+        <div class="card">
+            <button type=button onclick="location.href='pages/tothepast.html'">
+              <img src="images/1_tothepast%20(2).png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-start">To the past</h5>
+                <p class="card-text">A history app using augmented reality</p>
                 <div class="tool Unity3D">Unity3D</div>
                 <div class="tool Cs">C#</div>         
-                <div class="date">September 2021</div>
-            </div>
-        </button>
-    </div>
-  </div>
-    <!--Column-3-->
-  <div class="col">
-      <div class="card">
-        <button type=button onclick="location.href='pages/audiovisualisation.html'">
-          <img src="images/audiovisualisation.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-start">Audio Visualisation</h5>
-            <p class="card-text">A Unity program that visualizes audio using shaders</p>
-            <div class="tool Unity3D">Unity3D</div>
-            <div class="tool Cs">C#</div>
-            <div class="tool SG">Shader Graph</div>          
-            <div class="date">April 2022</div>
-          </div>
-        </button>
-    </div>
-      <div class="card">
-        <button type=button onclick="location.href='pages/battlegame.html'">
-            <img src="images/battlegame.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-start">2D Battle Game</h5>
-                <p class="card-text">A very basic 2D game made with C++</p>
-                <div class="tool Cs">C++</div>         
-                <div class="date">October 2021</div>
-            </div>
-        </button>
-    </div>
-     
-  </div>
-    <!--Column-4-->
-  <div class="col">
-      <div class="card">
-        <button type=button onclick="location.href='pages/xylotheque.html'">
-            <img src="images/museumfabriek.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-start">Xylotheque</h5>
-                <p class="card-text">A 3D mobile browser application for the Museumfabriek</p>
-                <div class="tool Gd">Godot</div>
-                <div class="tool GDS">GDScript</div>
-                <div class="tool Bjs">Babylon.js</div>
-                <div class="tool JS">JavaScript</div>         
+                <div class="date">December 2021</div>
+              </div>
+            </button>
+        </div>
+      </div>
+        <!--Column-2-->
+      <div class="col">
+          <div class="card">
+            <button type=button onclick="location.href='pages/terrainshader.html'">
+              <img src="images/terrainshader.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-start">Terrain Wave Shader</h5>
+                <p class="card-text">A simple wave shader for Unity terrain</p>
+                <div class="tool Unity3D">Unity3D</div>
+                <div class="tool Cg">Cg</div>           
                 <div class="date">June 2022</div>
-            </div>
-        </button>
-    </div>
-      <div class="card">
-        <button type=button onclick="location.href='pages/pogo.html'">
-            <img src="images/pogo_ingame.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title text-start">P.O.G.O.</h5>
-                <p class="card-text">A mobile endless runner game</p>
+              </div>          
+            </button>
+        </div>
+        <div class="card">
+            <button type=button onclick="location.href='pages/garmentory.html'">
+                <img src="images/3_garmentory.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-start">Garmentory</h5>
+                    <p class="card-text">A 3D game about the fashion industry</p>
+                    <div class="tool Unity3D">Unity3D</div>
+                    <div class="tool Cs">C#</div>         
+                    <div class="date">September 2021</div>
+                </div>
+            </button>
+        </div>
+      </div>
+        <!--Column-3-->
+      <div class="col">
+          <div class="card">
+            <button type=button onclick="location.href='pages/audiovisualisation.html'">
+              <img src="images/audiovisualisation.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-start">Audio Visualisation</h5>
+                <p class="card-text">A Unity program that visualizes audio using shaders</p>
                 <div class="tool Unity3D">Unity3D</div>
-                <div class="tool Cs">C#</div>         
-                <div class="date">March 2022</div>
-            </div>
-        </button>
+                <div class="tool Cs">C#</div>
+                <div class="tool SG">Shader Graph</div>          
+                <div class="date">April 2022</div>
+              </div>
+            </button>
+        </div>
+          <div class="card">
+            <button type=button onclick="location.href='pages/battlegame.html'">
+                <img src="images/battlegame.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-start">2D Battle Game</h5>
+                    <p class="card-text">A very basic 2D game made with C++</p>
+                    <div class="tool Cs">C++</div>         
+                    <div class="date">October 2021</div>
+                </div>
+            </button>
+        </div>
+
+      </div>
+        <!--Column-4-->
+      <div class="col">
+          <div class="card">
+            <button type=button onclick="location.href='pages/xylotheque.html'">
+                <img src="images/museumfabriek.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-start">Xylotheque</h5>
+                    <p class="card-text">A 3D mobile browser application for the Museumfabriek</p>
+                    <div class="tool Gd">Godot</div>
+                    <div class="tool GDS">GDScript</div>
+                    <div class="tool Bjs">Babylon.js</div>
+                    <div class="tool JS">JavaScript</div>         
+                    <div class="date">June 2022</div>
+                </div>
+            </button>
+        </div>
+          <div class="card">
+            <button type=button onclick="location.href='pages/pogo.html'">
+                <img src="images/pogo_ingame.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-start">P.O.G.O.</h5>
+                    <p class="card-text">A mobile endless runner game</p>
+                    <div class="tool Unity3D">Unity3D</div>
+                    <div class="tool Cs">C#</div>         
+                    <div class="date">March 2022</div>
+                </div>
+            </button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
     
-</div>  
-</section>
-    
-<!-----------------About-me------------------->
-<section id="aboutme" class="d-flex">
-    <div id="content" class="m-auto">
-        <h3 class="row col-4 mx-auto my-0 px-4">Learn more</h3>
-        <div class="row">
-            <div class="col-4"></div>
-            <h1 class="col-8 text-start ps-5 m-0 text-dark">About me</h1>
+        </div>
         </div>
     
-    <div id="box" class="row container py-4" style="max-width:800px">
-        <img id="pf" class="col-4" style="max-width: 150px; max-height: 197px" src="images/ik_open_cropped.png" >
-        <img id="pf-hover" class="col-4" style="max-width: 150px; max-height: 197px" src="images/ik.JPG" >
-        <div class="col-8 ps-4 m-0">
-        <p class="mb-1">Hello!</p> 
-        <p>My name is Lisanne Westeneng and I'm enthusiastic about a lot of things. My interests range from graphic design to physics programming, and now I get to explore those interests while studying Creative Media &amp; Game Technologies. Apart from that, I am also a fan of rollerskating, playing guitar and having fun with friends!</p>
-        </div>
-        
     </div>
-    </div>
-</section>
     
-<!-----------------General-information---------->
-<section id="contact" class="d-flex">
-    <div class="m-auto">
-        <h1 class="text-center pb-3">General Information</h1>
-        
-        <div id="box" class="d-flex py-4" style="max-width:900px">
-            <div class="row row-cols-1 row-cols-md-3 m-auto px-4 text-black" style="max-width: 900px">
-                <div class="col">
-                    <h4>Education</h4>
-                    <p>In 2019 I graduated high school in Groningen and received a VWO diploma.</p>
-                    <p>Since September 2020 I am studying Creative Media &amp; Game Technologies at Saxion University of Applied Sciences in Enschede, The Netherlands. I am currently doing my internship at the Saxion XR Lab.</p>
-                </div>
-                <div class="col">
-                    <h4>Technical Skills</h4>
-                    <strong class="m-0 text-dark">Tools:</strong>
-                    <p>Unity3D, Unreal Engine, Godot, Adobe Xd, Adobe Photoshop</p>
-                    <strong class="m-0" text-dark>Programming languages:</strong> 
-                    <p>C#, C++, started learning various shader languages and JavaScript.</p>
-                </div>
-                <div class="col">
-                    <h4>Contact Information</h4>
-                    <p class="mb-1">Send me an e-mail at: westenglisanne@gmail.com</p>
-                    <p class="mb-1"><a href="https://github.com/lisannewesteneng" target="_blank">GitHub</a></p>
-                    <p><a href="https://linkedin.com/in/lisanne-westeneng-503893201" target="_blank">LinkedIn</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
- 
+  <script>
 
-<!-----------------Footer--------------------->
-<section id="footer" class="bg-light text-secondary p-3">
-    <p class="text-center">Lisanne Westeneng – 2022</p>
-</section>
-
-
-    
-    
-    
-    </body>
+  </script>
+</body>
 </html>

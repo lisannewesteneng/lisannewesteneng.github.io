@@ -1,88 +1,110 @@
+
 @include media-breakpoint-only(xs) { ... }
 @include media-breakpoint-only(sm) { ... }
 @include media-breakpoint-only(md) { ... }
 @include media-breakpoint-only(lg) { ... }
-@include media-breakpoint-only(xl) { ... }
+@include media-breakpoint-only(xl) { ... }    
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700;800;900&display=swap');
-
-*
-{
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 900px;
+*{
+    list-style: none;
+    text-decoration: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1 { font-weight: 700 !important; }  
-h2 { font-weight: 900 !important; }
-h3 { font-weight: 600 !important; }
-h4 { font-weight: 400 !important; }
-h5 { font-weight: 600 !important; font-size: 15px;}
-h6 { font-weight: 300 !important; }
-
-body
-{
-    position: relative !important;
+html, body{
+    height: 100%
 }
 
-/*--------------------Navigation---------------------------*/
-#nav-bar
-{
-    
-}
-.nav li a
-{
-    color: black;
+body{
+    background: #f5f6fa;
 }
 
-.navbar
-{
-    /*background-image: linear-gradient(to right, #E1AB18	, #E1AB55);*/
-    background-color: #ffffff87 !important;
-    /*#73947b*/
-    padding: 0 !important;
-    margin-top: 5 !important;
-    
-    max-width: 370px;
-    border-radius: 15px 15px;
-    
-    position: fixed !important;
+.projects{
+    padding: 0px
 }
 
-.navbar-nav li
-{
-    padding: 0 10px;
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    /*
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: inherit;
+    */
+    position: fixed;
+    padding: 30px 0;
+    transition: all 0.5s ease;
 }
 
-.navbar-nav li a
-{
-    /*Nav elements color=white*/
-    color: #fff !important;
-    /*font-weight: 600;*/
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-/*--------------------Home----------------------------*/
-#home
-{
-    height: 200px;
-    background-image: url(images/stairs_dark.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 150px;
+    border-radius: 5%;
+    margin: 0 auto;
 }
 
-#intro h1
-{
-    font-size: 25px;
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
 }
 
-#intro p
-{
-    font-size: 15px;
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
 }
 
+.wrapper .sidebar .intro{
+    padding: 20px;
+    text-align: center;
+    color: rgb(241, 237, 237);
+    font-size: 14px;
+}
+
+
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
 
 /*--------------------Cards----------------------------*/
 #mywork
@@ -166,94 +188,6 @@ button
     padding: 4 0 1 0;
 }
 
-/*--------------------About-me----------------------------*/
-
-#aboutme
-{
-    height: 700px;
-    /*background-color: #A6705B !important;*/
-    background-color: #394a3d;
-}
-
-/*#aboutme .container*/
-#box
-{
-    height: auto !important;
-    box-shadow: 0px 3px 10px;
-    background-color: white;
-    margin: auto;
-    border-radius: 10px;
-}
-
-
-#content h1
-{
-    color: #fff !important;	
-}
-
-#content h3
-{
-    color: #9aa286;
-}
-
-#box:hover #pf-hover
-{
-    opacity: 0
-}
-
-#pf
-{
-    padding: 0 !important;
-    border-radius: 5px !important;
-}
-
-#pf-hover
-{
-    position: absolute;
-    padding:0;
-    margin:0;
-    border-radius: 5px !important;
-}
-
-/*-----------------General-information---------------------*/
-#contact
-{
-    background-color: #A6705B !important;
-    height: 600px;
-}
-
-#contact h1
-{
-    color: #fff;
-}
-
-#contact h4
-{
-    /*color: #cca698;*/
-    font-weight: 500 !important;
-}
-
-#contact #box
-{
-    background-color: white;
-}
-
-#contact a
-{
-    color: black;
-}
-
-#contact a:hover
-{
-    color: grey;
-}
-/*-----------------------Footer---------------------------*/
-#footer
-{
-    background-color: #222 !important;
-    font-size: 13px;
-}
-
 @media(min-width: 576px)
 {
     /*--------------Home--------------*/
@@ -335,8 +269,6 @@ button
         padding: 100 200 !important;
     }
 }
-
-
 
 
 
