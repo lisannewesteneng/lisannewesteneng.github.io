@@ -25,45 +25,41 @@ body{
 }
 
 .projects{
-    padding: 0px
+    padding: 10px;
 }
 
-.wrapper .sidebar{
-    background: rgb(5, 68, 104);
-    /*
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: inherit;
-    */
+.sidebar{
+    background: rgb(104, 102, 122);
+
+    width: 140px;
     position: fixed;
     padding: 30px 0;
     transition: all 0.5s ease;
 }
 
-.wrapper .sidebar .profile{
+.sidebar .profile{
     margin-bottom: 30px;
     text-align: center;
 }
 
-.wrapper .sidebar .profile img{
+.sidebar .profile img{
     display: block;
-    width: 150px;
+    width: 50%;
     border-radius: 5%;
     margin: 0 auto;
 }
 
-.wrapper .sidebar .profile h3{
+.sidebar .profile h3{
     color: #ffffff;
     margin: 10px 0 5px;
 }
 
-.wrapper .sidebar .profile p{
+.sidebar .profile p{
     color: rgb(206, 240, 253);
     font-size: 14px;
 }
 
-.wrapper .sidebar .intro{
+.sidebar .intro{
     padding: 20px;
     text-align: center;
     color: rgb(241, 237, 237);
@@ -72,7 +68,7 @@ body{
 
 
 
-.wrapper .sidebar ul li a{
+.sidebar ul li a{
     display: block;
     padding: 13px 30px;
     border-bottom: 1px solid #10558d;
@@ -81,32 +77,68 @@ body{
     position: relative;
 }
 
-.wrapper .sidebar ul li a .icon{
+.sidebar ul li a .icon{
     color: #dee4ec;
     width: 30px;
     display: inline-block;
 }
 
 
-.wrapper .sidebar ul li a:hover,
-.wrapper .sidebar ul li a.active{
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
     color: #0c7db1;
 
     background:white;
     border-right: 2px solid rgb(5, 68, 104);
 }
 
-.wrapper .sidebar ul li a:hover .icon,
-.wrapper .sidebar ul li a.active .icon{
+.sidebar ul li a:hover .icon,
+.sidebar ul li a.active .icon{
     color: #0c7db1;
 }
 
-.wrapper .sidebar ul li a:hover:before,
-.wrapper .sidebar ul li a.active:before{
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before{
     display: block;
 }
 
+/*--------------------Links----------------------------*/
+
+.links
+{
+    margin-top: 30px;
+}
+
+.linkbutton
+{
+    /*
+    
+    font-size: small;
+    
+    box-shadow: -2px 3px 1px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    max-width: 200px;
+    
+    background-color: rgb(114, 112, 133);
+    */
+    text-align: center;
+    font-size: small;
+    text-decoration: underline;
+}
+
+.links .linkbutton a
+{
+    color: rgb(48, 48, 48)
+}
+
+.links .linkbutton a:hover
+{
+    color: rgb(0, 0, 0)
+}
+
 /*--------------------Cards----------------------------*/
+
 #mywork
 {  
     background-color: #e8e2d5;
@@ -133,7 +165,7 @@ button
 .card
 {
     box-shadow: -2px 3px 1px;
-    margin-bottom: 10px;
+    background-color:rgb(241, 237, 237);
 }
 
 .card:hover
@@ -143,7 +175,7 @@ button
 
 .card-body
 {
-    
+
 }
 
 .card-title
@@ -170,7 +202,7 @@ button
     font-size: 12px;
 }
 
-.Unity3D { background-color: #a65d41 }
+.Unity3D { background-color: #966d5d }
 .Cs { background-color: #444e9e }
 .Cg { background-color: #2a99c9 }
 .SG { background-color: #b88440 }
@@ -211,7 +243,13 @@ button
     
     .card-body
     {
-        height: 140px;
+        /*height: 140px;*/
+    }
+
+    /*--------------Sidebar--------------*/
+    .sidebar
+    {
+        width: 150px;
     }
 }
 
@@ -233,7 +271,13 @@ button
     
     .card-body
     {
-        height: 100px;
+        /*height: 100px;*/
+    }
+
+    /*--------------Sidebar--------------*/
+    .sidebar
+    {
+        width: 200px;
     }
 }
 
@@ -257,6 +301,12 @@ button
     #mywork
     {
         padding: 100 100 !important;
+    }
+
+    /*--------------Sidebar--------------*/
+    .sidebar
+    {
+        width: 300px;
     }
     
 }
