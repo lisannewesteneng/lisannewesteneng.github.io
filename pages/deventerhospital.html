@@ -19,17 +19,24 @@
 <section id="content" class="container py-5" style="max-width: 900px">
     
     <div class="row">
-        <h2>IMT&S - Deventer Hospital</h2>
-        <p>As part of the IMT&S semeser in the fourth year of Creative Media & Game Technologies, I have been working on a calming VR application for Deventer Hosptial. I have the role of engineer in our six person team. This is still a work in progress!</p>
+        <h2>PaxVR for Deventer Hospital</h2>
+        <p>As part of the IMT&S semeser in the fourth year of Creative Media & 
+            Game Technologies, I have been working on a calming VR application for 
+            Deventer Hospital. I had the role of engineer in our six person team, 
+            which means I worked on creating the functionality in Unreal Engine, 
+            using blueprints. </p>
     </div>
     
     <div class="row">
         <h4>The project</h4>
-        <p>The client at Deventer Hospital asked for a VR application that can be used by patients when they are undergoing small procedures, for example blood drawing. The application should be calming and distracting, to divert the patients attention from anything that makes them nervous.</p>
+        <p>The client at Deventer Hospital asked for a VR application that can be 
+            used by patients when they are undergoing small procedures, for example 
+            blood drawing. The application should be calming and distracting, to 
+            divert the patients attention from anything that makes them nervous.</p>
     </div>
     
     <div class="row pb-5">
-        <h4>My contribution</h4>
+        <h4>Interactions</h4>
         <p>I have been working on VR interactions that only involve the movement of the head. 
             To keep the application as simple as possible, the client requested to not use any 
             controllers for interactions. This limits the interaction possibilites quite a bit. 
@@ -50,13 +57,51 @@
                 <h6>Image 2: A timer appears when looking at an interactable object.</h6>
             </div>
         </div>
+
+        <h4>Minigames</h4>
+        <p>I have implemented the two minigames that were designed to be in our project. The first
+            one is the 'Porch Defender' game, where the player has to defend their three bells 
+            from being stolen by ducks. The player can shoot/feed the ducks with grapes to distract them.
+        </p>
+        <p>The second one is the Constellations game, where the player plays connnect the dots with stars,
+            to form constellations.
+        </p>
+
+        <div class="row pb-5 px-4">
+            <div class="col">
+                <img src="/images/porchdefender.gif" style="padding-bottom: 5px; width: 320px">
+                <h6>Image 3: The porch defender game within the environment.</h6>
+            </div>
+            <div class="col">
+                <img src="/images/constellations.gif" style="padding-bottom: 5px; width: 320px">
+                <h6>Image 4: The constellations game, showing one of the constellations being completed.</h6>
+            </div>
+        </div>
+
+        <h4>Building for the Pico Headset - Android</h4>
+        <p>Our client was going to use the application on the Pico G2 4K VR headset specifically. 
+            This is not a very high-end headset, which runs on android. To create a succesful 
+            product, we had to build a lightweight android application. It was a challenge to 
+            keep it optimized enough to run smoothly, but it teached me a lot about performance
+             and profiling in Unreal Engine.</p>
+
+        <h4>Git Version Control</h4>
+        <p>I was responsible for the version control of this project. I set up a git 
+            repository and used a git workflow with branches for each feature.</p>
+
+        <h4>Final Product – PaxVR</h4>
+        <p>This video made by our designer Ihor showcases the final product. 
+            All models, art and animations are made by my fellow team members, 
+            see the video descriptions. All functionality is made by me using 
+            blueprints in Unreal Engine. </p>
         
         <div class="col d-flex">
             <div style="margin:auto">
-            <video width="400px" controls style="padding-bottom: 5px">
-                <source src="/videos/Interactions_constellationsgame.mp4" type="video/mp4">
-            </video>
-            <h6 style="width:400px">Video 1: A first look at the prototype environment, interactions, and telescope minigame.</h6>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BMNVlkXPEYc?si=tZnS1Dz5Jde__Duv" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" allowfullscreen></iframe>
+                <h6 style="width:500px">Video 1: A first look at the prototype environment, interactions, and telescope minigame.</h6>
             </div>
         </div>
     </div>
